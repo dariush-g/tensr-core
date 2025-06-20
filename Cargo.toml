@@ -1,0 +1,8 @@
+[package]
+name = "tensr-core"
+version = "0.1.0"
+edition = "2024"
+
+
+[dependencies]
+wgpu = "*"
