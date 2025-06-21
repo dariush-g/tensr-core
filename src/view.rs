@@ -17,8 +17,6 @@ pub struct TensorViewMut<'data, T> {
 }
 
 impl<'data, T> TensorViewMut<'data, T> {
-    //todo: implement get and get mut
-
     pub fn slice_mut(
         &'data mut self,
         axis: usize,
@@ -100,7 +98,7 @@ impl<T: Clone> Tensor<T> {
 }
 
 impl<'data, T> TensorView<'data, T> {
-    //todo: implement get and get mut
+    
     pub fn get(&self, indices: &[usize]) -> Result<&T> {
         if indices.len() != self.shape.len() {
             return Err(TensorError::IndexOutOfBounds);

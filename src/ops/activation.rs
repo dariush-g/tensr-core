@@ -28,8 +28,8 @@ impl Tensor<f32> {
             offset: *self.get_offset(),
         }
     }
-    pub fn softmax(&self, axis: usize) -> Self {
-        assert!(axis < self.shape.len(), "Invalid axis");
-        unimplemented!("softmax activation")
-    }
+    // pub fn softmax(&self, axis: usize) -> Self {
+    //     assert!(axis < self.shape.len(), "Invalid axis");
+    //     unimplemented!("softmax activation")
+    // }
 }

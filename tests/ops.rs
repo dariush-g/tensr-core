@@ -1,4 +1,4 @@
-use tecor::tensor::Tensor;
+use tensr_core::tensor::Tensor;
 
 #[test]
 fn test_add() -> Result<(), Box<dyn std::error::Error>> {
